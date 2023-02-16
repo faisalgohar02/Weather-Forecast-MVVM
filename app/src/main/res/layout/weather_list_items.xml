@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_110sdp"
+    android:background="@drawable/list_items_bg"
+    android:layout_margin="@dimen/_3sdp"
+    android:gravity="center"
+    android:padding="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dayTV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:gravity="center|bottom"
+        android:textStyle="bold"
+        tools:text="Tomorrow" />
+    <TextView
+        android:id="@+id/dateTxt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:gravity="center|top"
+        android:textStyle="normal"
+        tools:text="Tomorrow" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/weatherImg"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:srcCompat="@drawable/ic_01d"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:layout_marginStart="@dimen/_3sdp"/>
+
+    <TextView
+        android:id="@+id/minimumTemp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        tools:text="12" />
+
+    <TextView
+        android:id="@+id/maximumTemp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        tools:text="20" />
+
+</LinearLayout>
